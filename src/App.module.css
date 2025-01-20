@@ -1,0 +1,9 @@
+.flexContainer {
+  max-width: 1280px;
+  /* height: 400px; */
+  padding: 2.5rem;
+}
+
+.flexContainer p {
+  font-size: 20px;
+}

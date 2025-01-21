@@ -26,6 +26,9 @@ function App() {
     setInputValue(evt.target.value);
   };
 
+  const visibleContacts = contacts.filter((contact) =>
+    contact.name.toLowerCase().includes(inputValue.toLowerCase())
+  );
   useEffect(() => {
     localStorage.setItem("saved-contacts", JSON.stringify(contacts));
   }, [contacts]);
@@ -35,7 +38,7 @@ function App() {
       <h1>Phonebook</h1>
       {/* <ContactForm /> */}
       <SearchBox inputValue={inputValue} handleChange={handleChange} />
-      <ContactList contacts={contacts} handleDelete={handleDelete} />
+      <ContactList contacts={visibleContacts} handleDelete={handleDelete} />
     </div>
   );
 }

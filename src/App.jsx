@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 
 import ContactList from "./ContactList/ContactList";
 import SearchBox from "./SearchBox/SearchBox";
+import ContactForm from "./ContactForm/ContactForm";
 
 function App() {
   const [contacts, setContacts] = useState(
@@ -36,7 +37,7 @@ function App() {
   return (
     <div className={s.flexContainer}>
       <h1>Phonebook</h1>
-      {/* <ContactForm /> */}
+      <ContactForm />
       <SearchBox inputValue={inputValue} handleChange={handleChange} />
       <ContactList contacts={visibleContacts} handleDelete={handleDelete} />
     </div>

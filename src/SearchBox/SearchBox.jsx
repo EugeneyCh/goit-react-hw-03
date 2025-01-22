@@ -4,7 +4,6 @@ function SearchBox({ inputValue, handleChange }) {
   return (
     <div className={s.container}>
       <p>Find contacts by name</p>
-      <p>{inputValue} </p>
       <input type="text" value={inputValue} onChange={(e) => handleChange(e)} />
     </div>
   );

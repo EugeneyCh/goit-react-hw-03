@@ -1,0 +1,13 @@
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.field {
+    margin-left: 2px;
+    margin-top: 20px;
+}
+
+.btn {
+    margin-top: 20px;
+}

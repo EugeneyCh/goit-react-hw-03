@@ -37,7 +37,7 @@ function App() {
   return (
     <div className={s.flexContainer}>
       <h1>Phonebook</h1>
-      <ContactForm />
+      <ContactForm setContacts={setContacts} />
       <SearchBox inputValue={inputValue} handleChange={handleChange} />
       <ContactList contacts={visibleContacts} handleDelete={handleDelete} />
     </div>

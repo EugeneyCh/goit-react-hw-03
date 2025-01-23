@@ -1,10 +1,10 @@
-.container {
-    /* display: flex;
+/* .container {
+    display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     border: solid black;
-    border-radius: 8px; */
+    border-radius: 8px;
     margin: 20px 0;
     padding: 0 2px;
 }
@@ -14,6 +14,25 @@ input {
     height: 40px;
 }
 
-/* input {
+p {
     margin: 0;
 } */
+
+.container {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+p {
+    font-size: 18px;
+    color: #555;
+}

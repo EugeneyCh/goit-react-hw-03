@@ -13,8 +13,13 @@ const ContactForm = ({ setContacts }) => {
   const usernameFieldId = useId();
   const phoneNumberFieldId = useId();
   const handleSubmit = (values, actions) => {
-    console.log(values);
-    // setContacts=((prev)=>...prev,values)
+    const newContact = {
+      id: nanoid(),
+      name: values.username,
+      number: values.phoneNumber,
+    };
+
+    setContacts((prev) => [...prev, newContact]);
     actions.resetForm();
   };
 
